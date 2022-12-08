@@ -10,6 +10,7 @@ import MainState from './context/MainState'
 import BookingConfirmation from './BookingConfirmation/BookingConfirmation'
 import BookingConfirmed from './BookingConfirmed/BookingConfirmed'
 import Footer from './Footer/Footer'
+import Index from './Admin/Index'
 
 const App = () => {
   return (
@@ -24,6 +25,10 @@ const App = () => {
             <Route path="/booking-confirmation" element={<BookingConfirmation />} />
             <Route path="/booking-confirmed" element={<BookingConfirmed />} />
             <Route path="/track" element={<Track />} />
+            <Route path="/admin" element={<Index />} />
+            <Route path="/admin/:slug" element={<Index />} />
+            {/* <Route path="/admin/:booking" element={<Index />} />
+            <Route path="/admin/:refund" element={<Index />} /> */}
           </Routes>
           {/* <Footer /> */}
         </MainState>
