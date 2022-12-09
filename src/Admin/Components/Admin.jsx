@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import DataTable from 'react-data-table-component';
+import MainContext from '../../context/MainContext';
 import AddBusModal from '../Modals/AddBusModal';
 
 const columns = [
@@ -29,7 +30,15 @@ const data = [
 ]
 
 const Admin = (props) => {
-    
+    const context = useContext(MainContext);
+    useEffect(()=>{
+        getData();
+    },[]);
+
+    const getData=async ()=>{
+        const data= await context.getBuses();
+    }
+
     return (
         <>
         
