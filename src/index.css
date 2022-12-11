@@ -301,3 +301,16 @@ body::-webkit-scrollbar{
     background-color: white;
     margin-bottom: 1rem;
 }
+.admin-form{
+    height: 28rem;
+    overflow-y: auto;
+}
+.add-btn{
+    width: 40px;
+}
+.remove-btn{
+    width: 40px;
+}
+.step2-box{
+    width: 95.5%;
+}
