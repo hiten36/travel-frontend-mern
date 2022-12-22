@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Dashboard from './Home/Dashboard';
 import Sidebar from './Sidebar/Sidebar';
 import Admin from './Components/Admin';
 import { useParams } from 'react-router-dom';
 
-const Index = () => {
+const Index = (props) => {
     const { slug } = useParams();
-    console.log(slug);
+
     return (
         <>
-            <div className="flex">
+            <div className="flex admin-0">
                 <Sidebar />
-                {slug===undefined ? <Dashboard /> : slug==='bus' ? <Admin type="bus" /> : slug==="booking" ? <Admin type="bus" /> : slug==="refund" ? <Admin type="bus" /> : null}
+                {slug===undefined ? <Dashboard notify={props.notify} /> : slug==='bus' ? <Admin notify={props.notify} type="bus" /> : slug==="booking" ? <Admin notify={props.notify} type="bus" /> : slug==="refund" ? <Admin notify={props.notify} type="bus" /> : null}
             </div>
         </>
     )

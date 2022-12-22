@@ -5,11 +5,23 @@ import Footer from '../Footer/Footer';
 import Login1 from '../LoginBox/Login';
 import Signin from '../LoginBox/Signin';
 
-const Login = () => {
+const Login = (props) => {
     const [flag, setFlag] = useState(false);
-    function toggle_mover(e) {
+
+    const toggle_mover1 = () => {
         let b1 = document.querySelector('.toggle-mover');
-        if (e.target.innerText === 'Login') {
+        setFlag(true);
+        b1.style.left = '100px';
+        if (document.querySelector('.bg-purple')) {
+            b1.style.width = '90px';
+            document.querySelector('.bg-purple').classList.remove('bg-purple');
+        }
+        document.getElementById('login-btn').classList.add('bg-purple');
+    };
+
+    const toggle_mover = (e, tFLag = false) => {
+        let b1 = document.querySelector('.toggle-mover');
+        if (e.target.innerText === 'Login' && !tFLag) {
             setFlag(true);
             b1.style.left = '100px';
             if (document.querySelector('.bg-purple')) {
@@ -27,7 +39,8 @@ const Login = () => {
             }
             document.getElementById('register-btn').classList.add('bg-purple');
         }
-    }
+    };
+
     return (
         <>
             <div className="login py-14" id="Login">
@@ -46,7 +59,7 @@ const Login = () => {
                                 <b id="login-btn" onClick={toggle_mover} className="ml-4 z-10 cursor-pointer">Login</b>
                             </div>
                         </div>
-                        {flag ? <Login1 /> : <Signin />}
+                        {flag ? <Login1 notify={props.notify} toggle_mover={toggle_mover} setLoginRef={props.setLoginRef} loginRef={props.loginRef} /> : <Signin notify={props.notify} toggle_mover1={toggle_mover1} />}
                     </div>
                 </div>
             </div>

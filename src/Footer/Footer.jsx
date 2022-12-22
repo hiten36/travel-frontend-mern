@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import { NavHashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
     return (
@@ -34,7 +34,7 @@ const Footer = () => {
                         <h3 className="text-2xl mb-6">Quick Links</h3>
                         <div className="flex mb-0 foot11">
                             <img className="mr-1" src="/images/arrow.png" alt="arrow" />
-                            <NavHashLink smooth to="/#Home">Home</NavHashLink>
+                            <HashLink smooth to="/#Home">Home</HashLink>
                         </div>
                         <div className="flex mb-0 foot11">
                             <img className="mr-1" src="/images/arrow.png" alt="arrow" />
@@ -46,23 +46,23 @@ const Footer = () => {
                         </div>
                         <div className="flex mb-0 foot11">
                             <img className="mr-1" src="/images/arrow.png" alt="arrow" />
-                            <NavHashLink smooth to="/#Package">Packages</NavHashLink>
+                            <HashLink smooth to="/#Package">Packages</HashLink>
                         </div>
                         <div className="flex mb-0 foot11">
                             <img className="mr-1" src="/images/arrow.png" alt="arrow" />
-                            <NavHashLink smooth to="/#Service">Services</NavHashLink>
+                            <HashLink smooth to="/#Service">Services</HashLink>
                         </div>
                         <div className="flex mb-0 foot11">
                             <img className="mr-1" src="/images/arrow.png" alt="arrow" />
-                            <NavHashLink smooth to="/#Testimonial">Testimonials</NavHashLink>
+                            <HashLink smooth to="/#Testimonial">Testimonials</HashLink>
                         </div>
                         <div className="flex mb-0 foot11">
                             <img className="mr-1" src="/images/arrow.png" alt="arrow" />
-                            <NavHashLink smooth to="/#Review">Reviews</NavHashLink>
+                            <HashLink smooth to="/#Review">Reviews</HashLink>
                         </div>
                         <div className="flex mb-0 foot11">
                             <img className="mr-1" src="/images/arrow.png" alt="arrow" />
-                            <NavHashLink smooth to="/#Contact">Contact Us</NavHashLink>
+                            <HashLink smooth to="/#Contact">Contact Us</HashLink>
                         </div>
                     </div>
                     <div className="foot1">

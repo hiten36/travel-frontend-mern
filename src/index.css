@@ -302,7 +302,7 @@ body::-webkit-scrollbar{
     margin-bottom: 1rem;
 }
 .admin-form{
-    height: 28rem;
+    height: 33rem;
     overflow-y: auto;
 }
 .add-btn{
@@ -312,5 +312,39 @@ body::-webkit-scrollbar{
     width: 40px;
 }
 .step2-box{
-    width: 95.5%;
+    width: 93.5%;
+}
+.modal-css1{
+    top: 31%;
+    left: 35%;
+    box-shadow: 0px 0px 1px 5000px rgba(0,0,0,0.8);
+    border-radius: 5px;
+}
+.admin-0{
+    height: 92vh;
+}
+.admin-1{
+    height: 92vh;
+}
+.bus-details0{
+    padding: 1rem;
+    margin: 2rem 6rem;
+    background-color: white;
+    border-radius: 6px;
+}
+.err{
+    color: rgb(255, 58, 58);
+    font-weight: 700;
+    padding: 3px;
+    font-size: 11px;
+}
+.cus-modal1{
+    top: 4%;
+    left: 25%;
+    box-shadow: 0px 0px 1px 5000px rgba(0,0,0,0.8);
+    border-radius: 5px;
+}
+.auth-eye{
+    right: 8px;
+    top: 19px;
 }

@@ -85,7 +85,7 @@ const BusCard = () => {
                                 }} id="pop2"  className="bc111 mr-4">
                                     <h4 className="text-md font-semibold text-purple-800">CHILD PASSENGER</h4>
                                     <div className="mt-3 hidden">
-                                        <ul class="list-disc dark:text-gray-400">
+                                        <ul className="list-disc dark:text-gray-400">
                                             <li>Children above the age of 3 will need a ticket</li>
                                         </ul>
                                     </div>
@@ -95,7 +95,7 @@ const BusCard = () => {
                                 }} id="pop3"  className="bc111 mr-4">
                                     <h4 className="text-md font-semibold text-purple-800">LUGGAGE</h4>
                                     <div className="mt-3 hidden">
-                                        <ul class="list-disc dark:text-gray-400">
+                                        <ul className="list-disc dark:text-gray-400">
                                             <li>2 pieces of luggage will be accepted free of charge per passenger. Excess items will be chargeable</li>
                                             <li>Excess baggage over 15 kgs per passenger will be chargeable</li>
                                         </ul>
@@ -106,7 +106,7 @@ const BusCard = () => {
                                 }} id="pop4"  className="bc111 mr-4">
                                     <h4 className="text-md font-semibold text-purple-800">PETS</h4>
                                     <div className="mt-3 hidden">
-                                        <ul class="list-disc dark:text-gray-400">
+                                        <ul className="list-disc dark:text-gray-400">
                                             <li>Pets are not allowed</li>
                                         </ul>
                                     </div>
@@ -116,7 +116,7 @@ const BusCard = () => {
                                 }} id="pop5"  className="bc111 mr-4">
                                     <h4 className="text-md font-semibold text-purple-800">LIQUIR</h4>
                                     <div className="mt-3 hidden">
-                                        <ul class="list-disc dark:text-gray-400">
+                                        <ul className="list-disc dark:text-gray-400">
                                             <li>Carrying or consuming liquor inside the bus is prohibited. Bus operator reserves the right to deboard drunk passengers.</li>
                                         </ul>
                                     </div>
@@ -126,7 +126,7 @@ const BusCard = () => {
                                 }} id="pop6"  className="bc111 mr-4">
                                     <h4 className="text-md font-semibold text-purple-800">PICKUP TIME</h4>
                                     <div className="mt-3 hidden">
-                                        <ul class="list-disc dark:text-gray-400">
+                                        <ul className="list-disc dark:text-gray-400">
                                             <li>Bus operator is not obligated to wait beyond the scheduled departure time of the bus. No refund request will be entertained for late arriving passengers.</li>
                                         </ul>
                                     </div>
@@ -178,7 +178,7 @@ const BusCard = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Purple</button>
+                                    <button type="button" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Purple</button>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +190,7 @@ const BusCard = () => {
                                 <h2 className="text-4xl font-bold">₹ 199</h2>
                             </div>
                             <div>
-                                <button onClick={selectSeat} type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 w-full focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">SELECT SEATS</button>
+                                <button onClick={selectSeat} type="button" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 w-full focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">SELECT SEATS</button>
                             </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@ const BusCard = () => {
                             <p className="mr-2">UD-22</p>
                         </div>
                     </div>
-                    <button type="button" class="focus:outline-none text-white w-full bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Book Seats</button>
+                    <button type="button" className="focus:outline-none text-white w-full bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Book Seats</button>
                 </div>
             </div>
         </>

@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Dashboard = () => {
+const Dashboard = (props) => {
   return (
     <>
         Dashboard
+        
     </>
   )
 }
